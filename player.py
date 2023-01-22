@@ -1,6 +1,5 @@
 import pygame.image
-from pygame.sprite import Sprite, AbstractGroup, GroupSingle
-import settings as s
+from pygame.sprite import Sprite, AbstractGroup
 from slicer import get_images
 import pyganim
 
