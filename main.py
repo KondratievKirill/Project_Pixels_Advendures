@@ -17,13 +17,16 @@ game = Game(screen)
 # Game loop.
 while True:
     screen.fill((0, 0, 0))
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
+    try:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
 
-        game.take_input(event)
-    game.run()
+            game.take_input(event)
+        game.run()
+    except:
+        pass
     pygame.display.flip()
     fpsClock.tick(fps)
 
