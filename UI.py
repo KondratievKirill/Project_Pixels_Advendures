@@ -196,8 +196,7 @@ class StartScene:
     def __init__(self, screen, game):
         self.screen = screen
         self.game = game
-        self.image = pygame.Surface((s.WIDTH, s.HEIGHT))
-        self.image.fill((0, 0, 255))
+        self.image = pygame.image.load("images/startScreen.jpg")
         self.rect = self.image.get_rect(topright=(0, 0))
 
     def draw(self):
